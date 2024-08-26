@@ -16,7 +16,7 @@ const Page = () => {
               <div className="mt-4 space-y-4">
                 <div className="flex flex-col md:flex-row md:space-x-4 items-center">
                   <Mail
-                    className="p-2 mb-2 md:mb-0 border-2 border-pink-500 dark:text-black rounded-lg"
+                    className="p-2 mb-2 md:mb-0 border-2 border-pink-500 dark:bg-black rounded-lg"
                     size={40}
                   />
                   <span className="text-lg md:text-xl underline text-gray-800 ">
@@ -25,7 +25,7 @@ const Page = () => {
                 </div>
                 <div className="flex flex-col md:flex-row md:space-x-4 items-center">
                   <Phone
-                    className="p-2 mb-2 md:mb-0 border-2 border-pink-500 rounded-lg dark:text-black"
+                    className="p-2 mb-2 md:mb-0 border-2 border-pink-500 rounded-lg dark:bg-black"
                     size={40}
                   />
                   <span className="text-lg md:text-xl text-gray-800 ">
@@ -34,7 +34,7 @@ const Page = () => {
                 </div>
                 <div className="flex flex-col md:flex-row md:space-x-4 items-center">
                   <MapPin
-                    className="p-2 mb-2 md:mb-0 border-2 border-pink-500 rounded-lg dark:text-black"
+                    className="p-2 mb-2 md:mb-0 border-2 border-pink-500 rounded-lg dark:bg-black"
                     size={40}
                   />
                   <span className="text-lg md:text-xl text-gray-800 ">
