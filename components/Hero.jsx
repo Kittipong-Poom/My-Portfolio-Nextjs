@@ -13,7 +13,7 @@ const Hero = () => {
   
   return (
     <section
-    className="py-12 xl:py-24 h-[84vh] xl:pt-28 bg-hero
+    className="py-12 xl:py-24 h-[84vh] xl:pt-28
   bg-no-repeat bg-cover bg-bottom dark:bg-none"
   >
     <div className="container mx-auto">
