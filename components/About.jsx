@@ -166,6 +166,10 @@ const Additional = [
         name: "Postman",
         imgPath: "/about/postman-icon-svgrepo-com.svg",
       },
+      {
+        name: "Vercel",
+        imgPath: "/vercel.svg",
+      },
     ],
   },
 ];
