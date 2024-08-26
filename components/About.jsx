@@ -32,7 +32,7 @@ const infoData = [
   },
   {
     icon: <GraduationCap size={20} />,
-    text: "SoftWare Engineer",
+    text: "Mae fah Luang University MaJor : SoftWare Engineer",
   },
   {
     icon: <Calendar size={20} />,
