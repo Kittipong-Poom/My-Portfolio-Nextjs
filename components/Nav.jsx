@@ -24,7 +24,7 @@ const Nav = ({ containerStyles, linkStyles }) => {
   const links = [
     { path: "/", icon: "House", name: "home", onClick: handleClick },
     { path: "/projects", icon: "FolderKanban", name: "my projects" },
-    { path: "/contact", icon: "Contact", name: "contact" },
+    // { path: "/contact", icon: "Contact", name: "contact" },
   ];
 
   return (

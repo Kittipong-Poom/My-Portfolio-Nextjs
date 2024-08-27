@@ -21,7 +21,7 @@ const infoData = [
   },
   {
     icon: <MailIcon size={20} />,
-    text: "kittipong.wong00@gmail.com",
+    text: <span style={{ textDecoration: 'underline' }}>kittipong.wong00@gmail.com</span>,
   },
   {
     icon: <PhoneCall size={20} />,
