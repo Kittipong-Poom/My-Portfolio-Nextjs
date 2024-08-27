@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const MyService = () => {
   return (
-    <section className="relative pb-12 py-12 ">
+    <section className="relative pb-12 py-12 " data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
       {/* image bg */}
       <div className="absolute inset-0 bg-service_bg bg-cover bg-center filter blur-sm "></div>
       {/* content */}

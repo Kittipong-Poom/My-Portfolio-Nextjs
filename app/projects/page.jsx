@@ -77,7 +77,7 @@ const Projects = () => {
                     aria-selected={activeTab === tab.name ? "true" : "false"}
                   >
                     <span className="ml-1">{tab.name}</span>
-                    <img src={tab.framework_img} className="w-7 ml-1" />
+                    <img src={tab.framework_img} className="w-4 ml-1" />
                   </a>
                 </li>
               ))}
