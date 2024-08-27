@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { Paperclip } from "lucide-react";
-import { RiGitlabFill } from "react-icons/ri";
+import { RiGitlabFill, RiGithubFill } from "react-icons/ri";
 import AOS from "aos";
 import "aos/dist/aos.css";
 const Projects = () => {
@@ -20,8 +20,8 @@ const Projects = () => {
       imgPath: "/projects/e-commers.png",
       description:
         "Web Application Development for trading bicycles. Including the payment credit card page",
-      git: "",
-      link: "",
+      github: "https://github.com/Kittipong-Poom/e-commerce-nextjs",
+      link: "https://e-commerce-nextjs-seven-omega.vercel.app/",
       framework_img: "/about/nextjs-border.svg",
     },
 
@@ -95,16 +95,32 @@ const Projects = () => {
           </div>
         </div>
         {/* Card Projects */}
-        <div className="grid md:grid-cols-4 grid-cols-2 p-5 gap-x-6 gap-y-12 my-9">
+        <div
+          className="grid md:grid-cols-4 grid-cols-2 p-5 gap-x-6 gap-y-12 my-9"
+          data-aos="fade-right"
+        >
           {filteredFrameworks.map((item, index) => (
             <div
-              data-aos="fade-right"
               data-aos-delay={`${index * 250}`}
-              className="card bg-base-100 w-70 shadow-xl transition duration-300 hover:scale-105"
+              className="relative card bg-base-100 w-70 shadow-xl transition-transform duration-300 hover:scale-105 group"
               key={index}
             >
-              <figure>
-                <img src={item.imgPath} alt={item.name} className="h-[450px]" />
+              <figure className="relative">
+                <img
+                  src={item.imgPath}
+                  alt={item.name}
+                  className="h-[450px] bg-cover bg-center filter transition-all duration-300 group-hover:blur-sm"
+                />
+                {/* View More Button */}
+                <a
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="absolute  flex items-center justify-center px-4 py-2 border-2  bg-pink-600
+                   text-white rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-pink-500"
+                >
+                  Go To Website
+                </a>
               </figure>
               <div className="card-body">
                 <h2 className="card-title">
@@ -115,6 +131,17 @@ const Projects = () => {
                 </h2>
                 <p>{item.description}</p>
                 <div className="card-actions justify-end">
+                  {item.github && (
+                    <a
+                      href={item.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <div className="badge p-4 badge-outline hover:text-pink-600 transition-all">
+                        <RiGithubFill size={24} />
+                      </div>
+                    </a>
+                  )}
                   {item.git && (
                     <a
                       href={item.git}
