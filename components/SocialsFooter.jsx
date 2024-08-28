@@ -39,12 +39,7 @@ const Socials = ({ containerStyles, iconsStyles }) => {
       {icons.map((icon, index) => {
         return (
           <Link href={icon.path} key={index} legacyBehavior>
-            <a
-              data-aos="fade-down-right"
-              data-aos-delay={`${index * 100}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a target="_blank" rel="noopener noreferrer">
               <div className={`${iconsStyles}`}>{icon.name}</div>
             </a>
           </Link>
