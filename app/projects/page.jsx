@@ -31,7 +31,7 @@ const Projects = () => {
       description:
         "Web Application Development to emergency Ambulance units and collect annual patient data",
       git: "https://gitlab.com/6431503005/myambulance",
-      link: "https://gitlab.com/6431503005/myambulance",
+      link: "https://my-newambulance.web.app/",
       framework_img: "/about/nuxtjs.svg",
     },
   ];
