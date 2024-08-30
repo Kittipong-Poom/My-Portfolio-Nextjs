@@ -17,11 +17,11 @@ const Projects = () => {
   const frameworks = [
     {
       name: "Next.js",
-      imgPath: "/projects/e-commers.png",
+      imgPath: "/projects/e-commerce-nextjs.png",
       description:
-        "Web Application Development for trading bicycles. Including the payment credit card page",
+        "Web Application Development for Buy and sell various figures and make a payment system with stripe.",
       github: "https://github.com/Kittipong-Poom/e-commerce-nextjs",
-      link: "https://e-commerce-nextjs-seven-omega.vercel.app/",
+      link: "https://e-commerce-nextjs-pi-henna.vercel.app/",
       framework_img: "/about/nextjs-border.svg",
     },
 

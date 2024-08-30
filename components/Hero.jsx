@@ -106,7 +106,7 @@ const Hero = () => {
                   Contact <Send size={18} />
                 </button>
               </Link>
-              <a href="/hero/resume-internship.pdf" download>
+              <a href="/hero/Resume-internshipv2.pdf" download>
                 <button
                   data-aos="fade-up-left"
                   data-aos-delay="400"
