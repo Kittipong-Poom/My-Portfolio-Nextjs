@@ -30,7 +30,7 @@ const Projects = () => {
       imgPath: "/projects/ambulance.png",
       description:
         "Web Application Development to emergency Ambulance units and collect annual patient data",
-      git: "https://gitlab.com/6431503005/myambulance",
+      git: "https://github.com/Kittipong-Poom/Nuxtjs-Ambulance-Service",
       link: "https://my-newambulance.web.app/",
       framework_img: "/about/nuxtjs.svg",
     },
@@ -149,7 +149,7 @@ const Projects = () => {
                       rel="noopener noreferrer"
                     >
                       <div className="badge p-4 badge-outline hover:text-pink-600 transition-all">
-                        <RiGitlabFill size={24} />
+                        <RiGithubFill size={24} />
                       </div>
                     </a>
                   )}
