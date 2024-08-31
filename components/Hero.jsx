@@ -27,7 +27,7 @@ const Hero = () => {
 
   return (
     <section
-      className="py-12 xl:py-24 h-[84vh] xl:pt-28
+      className=" xl:py-24 h-[84vh]
   bg-no-repeat bg-cover bg-bottom dark:bg-none"
     >
       <div className="container mx-auto">
@@ -123,13 +123,14 @@ const Hero = () => {
             />
           </div>
           {/* Dev Image */}
-          <div className="hidden xl:flex relative">
-            <Parallax className="hidden xl:flex relative" strength={200}>
+          <div className="hidden xl:flex relative ">
+            <Parallax  strength={200}>
               <div
                 ref={devImgRef}
-                className="bg-hero_shape w-[510px] h-[462px] bg-no-repeat relative bg-bottom"
+                className="bg-hero_shape w-[510px] h-[590px] bg-no-repeat relative bg-bottom bottom-10 "
               >
-                <DevImg imgSrc="/hero/pngwing.com.png" />
+                <DevImg imgSrc="/hero/hero-remove1.png" 
+                className="absolute inset-0  w-full object-cover ]" />
               </div>
             </Parallax>
           </div>

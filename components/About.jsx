@@ -209,7 +209,7 @@ const About = () => {
     return arr.find((item) => item.title === title);
   };
   return (
-    <section className="pb-12 xl:py-24">
+    <section className="pb-12 xl:py-12">
       <div id="personal-info" className="container mx-auto">
         <div data-aos="fade-up" className="flex justify-center mb-8 ">
           <h2 className="text-6xl font-bold flex items-center space-x-4">
@@ -222,16 +222,20 @@ const About = () => {
           <div className="hidden xl:flex flex-1 relative">
             <div
               ref={devImgRef}
-              className="bg-about_shape_light dark:bg-about_shape_dark w-[505px] h-[505px] bg-no-repeat relative"
+              className=" bg-hero_shape2_light w-[505px] h-[530px]  bg-no-repeat relative"
               style={{
                 opacity: 0,
                 transform: "scale(1.3)",
                 transition: "opacity 0.5s ease, transform 0.5s ease",
               }}
             >
-              <DevImg imgSrc="/about/anime.png" />
+              <DevImg
+                imgSrc="/about/about-remove1.png"
+                className="absolute inset-0  object-cover"
+              />
             </div>
           </div>
+
           {/* Personal */}
           <div className="flex-1 mt-7 text-center xl:text-left flex flex-col">
             <div
