@@ -222,7 +222,7 @@ const About = () => {
           <div className="hidden xl:flex flex-1 relative">
             <div
               ref={devImgRef}
-              className=" bg-hero_shape2_light w-[505px] h-[530px]  bg-no-repeat relative"
+              className=" bg-hero_shape2_light w-[505px] h-[530px] bg-no-repeat relative"
               style={{
                 opacity: 0,
                 transform: "scale(1.3)",
@@ -230,8 +230,10 @@ const About = () => {
               }}
             >
               <DevImg
-                imgSrc="/about/poom-remove.png"
-                className="absolute inset-0  object-cover"
+                imgSrc="/about/poom-kp.png"
+                className="absolute inset-0 object-cover w-full"
+
+                
               />
             </div>
           </div>
