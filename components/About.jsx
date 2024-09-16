@@ -230,7 +230,7 @@ const About = () => {
               }}
             >
               <DevImg
-                imgSrc="/about/about-remove1.png"
+                imgSrc="/about/poom-remove.png"
                 className="absolute inset-0  object-cover"
               />
             </div>
