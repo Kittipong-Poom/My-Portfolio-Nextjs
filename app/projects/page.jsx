@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { Paperclip } from "lucide-react";
-import { RiGitlabFill, RiGithubFill } from "react-icons/ri";
+import { RiGithubFill } from "react-icons/ri";
 import AOS from "aos";
 import "aos/dist/aos.css";
 const Projects = () => {
@@ -17,6 +17,7 @@ const Projects = () => {
   const frameworks = [
     {
       name: "Next.js",
+      project_name: "Figurees",
       imgPath: "/projects/e-commerce-nextjs.png",
       description:
         "Web Application Development for Buy and sell various figures and make a payment system with stripe.",
@@ -27,12 +28,24 @@ const Projects = () => {
 
     {
       name: "Nuxt.js",
+      project_name: "Ambulance Service",
       imgPath: "/projects/ambulance.png",
       description:
         "Web Application Development to emergency Ambulance units and collect annual patient data",
       git: "https://github.com/Kittipong-Poom/Nuxtjs-Ambulance-Service",
       link: "https://my-newambulance.web.app/",
       framework_img: "/about/nuxtjs.svg",
+    },
+
+    {
+      name: "Next.js",
+      project_name: "NoteEasy",
+      imgPath: "/projects/NoteEasy.png",
+      description:
+        "Web Application Development for Make notes and schedules and can arrange dates close to the schedule.",
+      github: "https://github.com/Kittipong-Poom/test-note",
+      link: "https://note-easy101.web.app/",
+      framework_img: "/about/nextjs-border.svg",
     },
   ];
 
@@ -129,6 +142,9 @@ const Projects = () => {
                     <img src={item.framework_img} className="w-10" />
                   </div>
                 </h2>
+                <h5 className="flex">
+                  <h4 className="font-bold">Project Name :  </h4> <p> {item.project_name}</p>
+                </h5>
                 <p>{item.description}</p>
                 <div className="card-actions justify-end">
                   {item.github && (
