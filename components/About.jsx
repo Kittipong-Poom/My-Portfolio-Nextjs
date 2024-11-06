@@ -96,14 +96,6 @@ const skillData = [
         name: "Tailwindcss",
         imageUrl: "/about/tailwindcss.svg",
       },
-      {
-        name: "Daisy ui",
-        imageUrl: "/about/daisyuitext.svg",
-      },
-      {
-        name: "Shadcn",
-        imageUrl: "/about/shadcn-ui.svg",
-      },
     ],
   },
   {
@@ -124,6 +116,23 @@ const skillData = [
       {
         name: "TypeScript",
         imageUrl: "/about/typescript.svg",
+      },
+    ],
+  },
+  {
+    title: "UiComponent",
+    data: [
+      {
+        name: "Daisy ui",
+        imageUrl: "/about/daisyuitext.svg",
+      },
+      {
+        name: "Shadcn",
+        imageUrl: "/about/shadcn-ui.svg",
+      },
+      {
+        name: "Vuetify",
+        imageUrl: "/about/vuetify.svg",
       },
     ],
   },
@@ -240,8 +249,6 @@ const About = () => {
               <DevImg
                 imgSrc="/about/poom-kp.png"
                 className="absolute inset-0 object-cover w-full"
-
-                
               />
             </div>
           </div>
@@ -421,6 +428,41 @@ const About = () => {
                   );
                 })}
               </div>
+              <h4
+                data-aos="fade-down-right"
+                className="text-2xl font-semibold mb-2 xl:text-left mt-12 text-center"
+              >
+                Ui Component
+              </h4>
+              <div
+                data-aos="fade-left"
+                className="border-b border-pink-500 mb-4"
+              ></div>
+              <div className="grid md:grid-cols-2">
+                {getData(skillData, "UiComponent").data.map((item, index) => {
+                  const { name, imageUrl } = item;
+                  return (
+                    <div
+                      data-aos="zoom-out-left"
+                      data-aos-delay={`${index * 250}`}
+                      className="w-2/4 text-center xl:text-left mx-auto mt-3
+                    xl:mx-0 justify-center "
+                      key={index}
+                    >
+                      <div className="flex items-center justify-center xl:justify-start gap-4">
+                        {imageUrl && (
+                          <img
+                            src={imageUrl}
+                            alt={name}
+                            className="w-10 h-10 object-contain"
+                          />
+                        )}
+                        <div className="font-medium">{name}</div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
             <div className="mb-16">
               <h4 data-aos="fade-left" className="text-2xl font-semibold mb-2">
@@ -456,7 +498,6 @@ const About = () => {
                 })}
               </div>
             </div>
-
             <div className="mb-16">
               <h4 data-aos="fade-right" className="text-2xl font-semibold mb-2">
                 Database
