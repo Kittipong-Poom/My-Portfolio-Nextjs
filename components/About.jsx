@@ -114,8 +114,16 @@ const skillData = [
         imageUrl: "/about/icons8-express-js.svg",
       },
       {
-        name: "JavaScript",
+        name: "Node.Js",
+        imageUrl: "/about/nodejs.svg",
+      },
+      {
+        name: "Javascript",
         imageUrl: "/about/javascript.svg",
+      },
+      {
+        name: "TypeScript",
+        imageUrl: "/about/typescript.svg",
       },
     ],
   },
