@@ -103,7 +103,7 @@ const Hero = () => {
                       .scrollIntoView({ behavior: "smooth" });
                   }}
                 >
-                  Contact <Send size={18} />
+                  AboutMe <Send size={18} />
                 </button>
               </Link>
               <a href="/hero/Resume-Kittipong-Wongsaditsayanon.pdf" download>

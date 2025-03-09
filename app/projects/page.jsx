@@ -28,6 +28,17 @@ const Projects = () => {
 
     {
       name: "Nuxt.js",
+      project_name: "SpaceX-Api",
+      imgPath: "/projects/spacex.png",
+      description:
+        "This project will be used to retrieve the API data from Spacex who has any information, such as the pilot named the vehicle out.",
+      git: "https://github.com/Kittipong-Poom/Nuxt-Exam-Landing",
+      link: "https://nuxt-spacesapi-landing.vercel.app/",
+      framework_img: "/about/nuxtjs.svg",
+    },
+
+    {
+      name: "Nuxt.js",
       project_name: "Ambulance Service",
       imgPath: "/projects/ambulance.png",
       description:
@@ -36,7 +47,6 @@ const Projects = () => {
       link: "https://my-newambulance.web.app/",
       framework_img: "/about/nuxtjs.svg",
     },
-
     {
       name: "Next.js",
       project_name: "NoteEasy",
